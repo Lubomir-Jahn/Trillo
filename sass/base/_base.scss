@@ -29,7 +29,11 @@
 }
 
 html {
-    font-size: 62.5% //1rem = 10px, 10px/16px = 0.625
+    font-size: 62.5%; //1rem = 10px, 10px/16px = 0.625
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%; //1rem = 8px;
+    }
 }
 
 body {
